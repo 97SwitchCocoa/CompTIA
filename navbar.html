@@ -1,0 +1,1342 @@
+<section class="header-container">
+  <header class="container header">
+    <a id="top" name="#top"></a>
+
+    <script type="text/javascript">
+      //Determine how much padding is needed for the nav.  1170px - window width
+      $(document).ready(function () {
+        var width = jQuery(window).width();
+        var navTotal = width - 1140;
+        var navPadding = navTotal / 2;
+
+        $(".cd-secondary-nav").attr("style", "padding: 3rem " + navPadding + "px; margin-right: -" + (navPadding + 30) + "px;");
+      });
+    </script>
+
+    <div class="cd-main-header">
+      <a
+        href="/home"
+        class="cd-logo"
+        onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Top Logo' });"
+      >
+        <img
+          src="https://comptiacdn.azureedge.net/webcontent/images/default-source/siteicons/iconcomptialogo.svg?sfvrsn=2053aaea_2"
+          alt="CompTIA"
+          title="CompTIA"
+          class="toplogo"
+        />
+      </a>
+
+      <ul class="cd-header-buttons">
+        <li class="above-nav hideOnMobile hideOnTablet">
+          <a
+            id="tn_join"
+            href="https://connect.comptia.org"
+            onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Join Now' });"
+          >
+            Corporate Membership
+          </a>
+        </li>
+        <li class="above-nav hideOnMobile hideOnTablet">
+          <a
+            id="tn_join"
+            href="https://partners.comptia.org"
+            onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Partners' });"
+          >
+            Partners
+          </a>
+        </li>
+        <li class="above-nav hideOnMobile hideOnTablet">
+          <a
+            id="tn_contactus"
+            href="/about-us"
+            onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'About Us' });"
+          >
+            About Us
+          </a>
+        </li>
+        <li class="above-nav hideOnMobile hideOnTablet">
+          <a
+            id="tn_contactus"
+            href="/contact-us"
+            onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Contact Us' });"
+          >
+            Contact Us
+          </a>
+        </li>
+        <li class="above-nav hideOnMobile hideOnTablet">
+          <a
+            id="tn_help"
+            href="https://help.comptia.org/hc/en-us/categories/115001121563"
+            onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Help' });"
+          >
+            Help
+          </a>
+        </li>
+        <li class="cd-worldwide-trigger">
+          <a href="#cd-ww" role="button"
+            ><img
+              src="https://comptiacdn.azureedge.net/webcontent/images/default-source/mainsitetemplateimages/worldwide.png?sfvrsn=15d61ec0_2"
+              title="Worldwide"
+              alt="Worldwide"
+          /></a>
+          <ul class="cd-worldwide-nav is-hidden">
+            <li><a href="/home" class="en-us">English</a></li>
+            <li><a href="/de/start" class="de">German</a></li>
+            <li><a href="/pt/pagina-inicial" class="pt">Portuguese</a></li>
+            <li><a href="/es/pagina-principal" class="es">Spanish</a></li>
+          </ul>
+        </li>
+        <li>
+          <a id="tn_search" class="cd-search-trigger" href="#cd-search">Search<span></span></a>
+        </li>
+        <li>
+          <a class="cd-nav-trigger" href="#cd-primary-nav">Menu<span></span></a>
+        </li>
+        <li>
+          <a
+            id="tn_myaccount"
+            class="my-account hideOnMobile hideOnTablet"
+            href="https://my.comptia.org"
+            onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'My Account' });"
+          >
+            Log in
+          </a>
+        </li>
+        <li>
+          <a
+            id="tn_store"
+            class="store hideOnMobile hideOnTablet"
+            href="https://store.comptia.org/"
+            onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Store' });"
+          >
+            <img
+              style="width: 22px; height: 19px"
+              alt="Shopping Cart"
+              src="https://comptiacdn.azureedge.net/webcontent/images/default-source/siteicons/iconstore.svg?sfvrsn=bf78c82b_2"
+            />Store
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <main class="cd-main-content"></main>
+
+    <div class="cd-overlay"></div>
+
+    <nav class="cd-nav">
+      <ul id="cd-primary-nav" class="cd-primary-nav is-fixed">
+        <li class="hideOnDesktop sub mobile-white-navitem">
+          <a
+            href="https://store.comptia.org/"
+            onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Store' });"
+            >Store<span></span
+          ></a>
+        </li>
+        <!-- Certifications -->
+        <li class="has-children">
+          <a
+            aria-haspopup="true"
+            href="/certifications"
+            onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Certifications' });"
+          >
+            Certifications<span></span>
+          </a>
+
+          <ul class="cd-secondary-nav is-hidden">
+            <li class="go-back">
+              <a href="#0">Menu<span></span></a>
+            </li>
+            <li class="see-all">
+              <a
+                href="/certifications"
+                onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Certifications' });"
+                >Certifications</a
+              >
+            </li>
+
+            <li class="has-children half">
+              <ul class="is-hidden two-col">
+                <li>
+                  <a
+                    href="/certifications?level=core"
+                    class="nav-heading"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Core Certifications' });"
+                    >Core</a
+                  >
+
+                  <ul class="is-hidden d-visible one-col force-mobile">
+                    <li>
+                      <a
+                        href="/certifications/it-fundamentals"
+                        onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'IT Fundamentals' });"
+                        >ITF+</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/certifications/a"
+                        onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'A+' });"
+                        >A+</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/certifications/network"
+                        onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Network+' });"
+                        >Network+</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/certifications/security"
+                        onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Security+' });"
+                        >Security+</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a
+                    href="/certifications?level=infrastructure"
+                    class="nav-heading"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Infrastructure Certifications' });"
+                    >Infrastructure</a
+                  >
+
+                  <ul class="is-hidden d-visible force-mobile one-col">
+                    <li>
+                      <a
+                        href="/certifications/cloud"
+                        onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Cloud+' });"
+                        >Cloud+</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/certifications/linux"
+                        onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Linux+' });"
+                        >Linux+</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/certifications/server"
+                        onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Server+' });"
+                        >Server+</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a
+                    href="/certifications?level=cybersecurity"
+                    class="nav-heading"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Cybersecurity Certifications' });"
+                    >Cybersecurity</a
+                  >
+
+                  <ul class="is-hidden d-visible force-mobile one-col">
+                    <li>
+                      <a
+                        href="/certifications/cybersecurity-analyst"
+                        onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Cybersecurity Analyst+' });"
+                        >CySA+</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/certifications/pentest"
+                        onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'PenTest+' });"
+                        >PenTest+</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/certifications/comptia-advanced-security-practitioner"
+                        onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CASP+' });"
+                        >CASP+</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a
+                    href="/certifications?level=dataanalytics"
+                    class="nav-heading"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Data and Analytics' });"
+                    >Data and Analytics</a
+                  >
+
+                  <ul class="is-hidden d-visible force-mobile one-col">
+                    <li>
+                      <a
+                        href="/certifications/data"
+                        onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Data+' });"
+                        >Data+</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a
+                    href="/certifications?level=additionalprofessional"
+                    class="nav-heading"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Additional Professional Certifications' });"
+                    >Additional Professional</a
+                  >
+
+                  <ul class="is-hidden d-visible force-mobile one-col">
+                    <li>
+                      <a
+                        href="/certifications/ctt"
+                        onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CTT+' });"
+                        >CTT+</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/certifications/cloud-essentials"
+                        onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Cloud Essentials' });"
+                        >Cloud Essentials+</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="/certifications/project"
+                        onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Project+' });"
+                        >Project+</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="has-children quarter">
+              <span class="nav-heading" role="presentation">Exam Development</span>
+              <ul class="is-hidden one-col">
+                <li>
+                  <a
+                    runat="server"
+                    href="/certifications/become-a-subject-matter-expert"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'SME Overview' });"
+                    >Overview</a
+                  >
+                </li>
+                <li>
+                  <a
+                    runat="server"
+                    href="/certifications/become-a-subject-matter-expert/apply-now"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'How to Apply' });"
+                    >How to Apply</a
+                  >
+                </li>
+                <li>
+                  <a
+                    runat="server"
+                    href="/certifications/become-a-subject-matter-expert/workshops"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Workshops' });"
+                    >Currently Recruiting</a
+                  >
+                </li>
+                <li>
+                  <a
+                    runat="server"
+                    href="/certifications/become-a-subject-matter-expert/current-smes"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Current SMEs' });"
+                    >Current CompTIA SMEs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    runat="server"
+                    href="/certifications/become-a-subject-matter-expert/refer-a-friend"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'SME Refer a Friend' });"
+                    >Refer a Friend</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="has-children quarter">
+              <span class="nav-heading" role="presentation"> Certification Resources</span>
+              <ul class="is-hidden one-col">
+                <li>
+                  <a
+                    href="/certifications/4-steps-to-certification"
+                    class="cd-nav-item"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': '4 Steps to Certification' });"
+                    >4 Steps to Certification</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/certifications/which-certification"
+                    class="cd-nav-item"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Which Certification is Right' });"
+                    >Which certification is right for me?</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/certifications/comptia-digital-badges"
+                    class="cd-nav-item"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Digital Badges' });"
+                    >CompTIA Digital Badges</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/content/lp/certified-team-award"
+                    class="cd-nav-item"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Certified Team Award' });"
+                    >Certified Team Award</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Training -->
+        <li class="has-children">
+          <a
+            href="/training"
+            aria-haspopup="true"
+            onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Training' });"
+            >Training<span></span
+          ></a>
+
+          <ul class="cd-secondary-nav is-hidden">
+            <li class="go-back">
+              <a href="#0">Menu<span></span></a>
+            </li>
+            <li class="see-all">
+              <a
+                href="/training"
+                onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Training' });"
+                >Training</a
+              >
+            </li>
+
+            <li class="has-children quarter training-en">
+              <span class="nav-heading"
+                ><a
+                  href="/training/by-certification"
+                  onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Training By Certification' });"
+                  >By Certification</a
+                ></span
+              >
+
+              <ul class="is-hidden">
+                <li>
+                  <a
+                    href="/training/by-certification/a"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'A+ Training' });"
+                    >CompTIA A+ Training</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/training/by-certification/network"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Network+ Training' });"
+                    >CompTIA Network+ Training</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/training/by-certification/security"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Security+ Training' });"
+                    >CompTIA Security+ Training</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/training/by-certification/casp"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CASP+ Training' });"
+                    >CompTIA CASP+ Training</a
+                  >
+                </li>
+                <li>&nbsp;</li>
+                <li>
+                  <a
+                    href="/training/by-certification"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'View All Cert Training' });"
+                    >View All Certs</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="has-children quarter training-en">
+              <span class="nav-heading" role="presentation">For Individuals</span>
+
+              <ul class="is-hidden">
+                <li>
+                  <a
+                    href="/training/certmaster-learn"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'eLearning' });"
+                    >eLearning</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/training/certmaster-labs"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Virtual Labs' });"
+                    >Virtual Labs</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="/training/classroom-training/online-instructor-led-training"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Virtual Labs' });"
+                    >Live Online Training</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/training/classroom-training/comptia-tech-training-career-services"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Virtual Labs' });"
+                    >CompTIA Tech Career Academy</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="/training/certmaster-practice"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Exam Prep' });"
+                    >Exam Prep</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/training/books"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CompTIA Books' });"
+                    >CompTIA Books</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="has-children quarter training-en">
+              <span class="nav-heading" role="presentation">For Groups</span>
+              <ul class="is-hidden">
+                <li>
+                  <a
+                    href="/training/employers-workforce-development/workforce-development-training"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Workforce Development Solutions' });"
+                    >Workforce Development Solutions</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/training/employers-workforce-development/academic-government-solutions"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Academic & Government Solutions' });"
+                    >Employer / Academic / Government</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/training/employers-workforce-development/why-comptia-training-solutions"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Why CompTIA Training Solutions' });"
+                    >Why CompTIA Training Solutions</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="has-children quarter training-en">
+              <span class="nav-heading"
+                ><a
+                  href="/training/resources"
+                  onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Training Resources' });"
+                  >Training Resources</a
+                ></span
+              >
+
+              <ul class="is-hidden">
+                <li>
+                  <a
+                    href="/training/practice-questions"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Practice Test' });"
+                    >Practice Test</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/training/exam-objectives"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Exam Objectives' });"
+                    >Exam Objectives</a
+                  >
+                </li>
+                <li>
+                  <a
+                    style="height: auto"
+                    href="/training/certmaster-learn/trial-sign-up"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CertMaster Learn Labs Trial' });"
+                    >CertMaster Learn + Labs Trial</a
+                  >
+                </li>
+                <li>
+                  <a
+                    style="height: auto"
+                    href="/training/certmaster-practice/trial-sign-up"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CertMaster Practice Trial' });"
+                    >CertMaster Practice Trial</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/training/resources/book-samples"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Book Samples' });"
+                    >CompTIA Book Samples</a
+                  >
+                </li>
+                <li>
+                  <a
+                    style="height: auto"
+                    href="/training/training-partners"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Authorized Partners' });"
+                    >Authorized Partner Program</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Testing -->
+        <li class="has-children">
+          <a
+            href="/testing"
+            aria-haspopup="true"
+            onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Testing' });"
+            >Testing<span></span
+          ></a>
+
+          <ul class="cd-secondary-nav is-hidden">
+            <li class="go-back">
+              <a href="#0">Menu<span></span></a>
+            </li>
+            <li class="see-all">
+              <a href="/testing" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Testing' });"
+                >Testing</a
+              >
+            </li>
+
+            <li class="has-children third training-en">
+              <span class="nav-heading" role="presentation">Testing Options</span>
+
+              <ul class="is-hidden">
+                <li>
+                  <a
+                    href="/testing/testing-options/about-testing-options"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'About Testing Options' });"
+                    >About Testing Options</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/testing/testing-options/take-in-person-exam"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Take In-Person Exam' });"
+                    >In-Person Exams</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/testing/testing-options/take-online-exam"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Take Online Exam' });"
+                    >Online Exams</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="has-children third training-en">
+              <span class="nav-heading" role="presentation">EXAM VOUCHERS</span>
+
+              <ul class="is-hidden">
+                <li>
+                  <a
+                    href="/testing/exam-vouchers/exam-prices"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'About Exam Pricing' });"
+                    >About Exam Pricing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/testing/exam-vouchers/buy-exam"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Buy Exam Vouchers' });"
+                    >Buy Exam Vouchers</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="has-children third training-en">
+              <span class="nav-heading" role="presentation">TESTING POLICIES AND PROCEDURES</span>
+
+              <ul class="is-hidden">
+                <li>
+                  <a
+                    href="/testing/testing-policies-procedures/test-policies"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'About Testing Policies' });"
+                    >About Testing Policies</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/testing/test-policies/exam-development"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Exam Development Process' });"
+                    >Exam Development Process</a
+                  >
+                </li>
+                <li>
+                  <a
+                    style="height: auto"
+                    href="/contact-us/comptia-exam-security-hotline"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Exam Security Hotline' });"
+                    >Exam Security Hotline</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Continuing Ed -->
+        <li class="has-children">
+          <a
+            href="/continuing-education"
+            aria-haspopup="true"
+            onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Continuing Education' });"
+            >Continuing Education<span></span
+          ></a>
+
+          <ul class="cd-secondary-nav is-hidden">
+            <li class="go-back">
+              <a href="#0">Menu<span></span></a>
+            </li>
+            <li class="see-all">
+              <a
+                href="/continuing-education"
+                onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Continuing Education' });"
+                >Continuing Education</a
+              >
+            </li>
+
+            <li class="has-children nav-gallery quarter border-right">
+              <ul class="is-hidden d-visible">
+                <li>
+                  <div class="icon">
+                    <a
+                      href="/continuing-education/why-renew"
+                      class="cd-nav-item"
+                      onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CE Why Renew' });"
+                    >
+                      <span class="helper"></span
+                      ><img
+                        src="https://comptiacdn.azureedge.net/webcontent/images/default-source/siteicons/a0-get-the-most.svg?sfvrsn=14417d78_2"
+                        alt="Why Renew?"
+                      />
+                    </a>
+                  </div>
+
+                  <a
+                    href="/continuing-education/why-renew"
+                    class="cd-nav-item"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CE Why Renew' });"
+                  >
+                    <h3>Why Renew?</h3>
+                  </a>
+                </li>
+                <li>
+                  <div class="icon">
+                    <a
+                      href="/continuing-education/submit"
+                      class="cd-nav-item"
+                      onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CE Submit' });"
+                    >
+                      <span class="helper"></span
+                      ><img
+                        src="https://comptiacdn.azureedge.net/webcontent/images/default-source/siteicons/d0-submit-ceus.svg?sfvrsn=83fe8fed_2"
+                        alt="Choose CE Path"
+                      />
+                    </a>
+                  </div>
+                  <a
+                    href="/continuing-education/submit"
+                    class="cd-nav-item"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CE Submit' });"
+                  >
+                    <h3>Submit Your CEUs and Renew</h3>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="has-children third">
+              <span class="nav-heading"
+                ><a
+                  runat="server"
+                  href="/continuing-education/learn"
+                  onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Learn About the Renewal Process' });"
+                  >Learn About the Renewal Process</a
+                ></span
+              >
+
+              <ul class="is-hidden">
+                <li>
+                  <a
+                    href="/continuing-education/learn/overview"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Renewal Overview' });"
+                    >Overview</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/continuing-education/learn/how-to-renew"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'How to Renew' });"
+                    >How to Renew</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/continuing-education/learn/ce-program-fees"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Continuing Education Fees' });"
+                    >Continuing Education Fees</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/continuing-education/learn/earn-continuing-education-units"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Continuing Education Units' });"
+                    >Continuing Education Units (CEUs)</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/continuing-education/learn/renewing-multiple-certifications"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Multiple Renewals' });"
+                    >Multiple Renewals</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/continuing-education/learn/dod-ce-information"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'DoD Employees' });"
+                    >DoD Employees and Contractors</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="has-children third">
+              <span class="nav-heading"
+                ><a
+                  href="/continuing-education/choose"
+                  onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Choose Your Renewal Path' });"
+                  >Choose Your Renewal Path</a
+                ></span
+              >
+
+              <ul class="is-hidden">
+                <li>
+                  <a
+                    href="/continuing-education/choose/renew-with-a-single-activity"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Renew with a Single Activity' });"
+                    >Renew with a Single Activity</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/continuing-education/choose/renewing-with-multiple-activities"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Renew with a Multiple Activities' });"
+                    >Renew with Multiple Activities</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/continuing-education/choose/renewal-options"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Renewal Options' });"
+                    >What Renewal Options Are Available to You?</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Events -->
+        <li class="has-children">
+          <a
+            href="/events"
+            aria-haspopup="true"
+            onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Events' });"
+            >Events<span></span
+          ></a>
+
+          <ul class="cd-secondary-nav is-hidden">
+            <li class="go-back">
+              <a href="#0">Menu<span></span></a>
+            </li>
+            <li class="see-all">
+              <a href="/events" onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Events' });"
+                >Events</a
+              >
+            </li>
+
+            <li class="has-children quarter">
+              <span class="nav-heading"
+                ><a
+                  href="/events/all-events/"
+                  onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Event List' });"
+                  >Events</a
+                ></span
+              >
+
+              <ul class="is-hidden">
+                <li>
+                  <a
+                    href="/events/all-events/"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'All Events' });"
+                    >All Events</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/ccf"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CompTIA Community Forum' });"
+                    >CompTIA Communities &amp; Councils Forum</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/partnersummit"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Partner Summit' });"
+                    >Partner Summit</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/channelcon"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'ChannelCon' });"
+                    >ChannelCon</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/emea"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'EMEA Member & Partner Conference' });"
+                    >EMEA Member & Partner Conference</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/events/view/comptia-pti-cyber-leader-summit"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Cyber Leader Summit' });"
+                    >PTI Cyber Leader Summit</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="has-children quarter">
+              <span class="nav-heading"
+                ><a
+                  href="/events/webinars/"
+                  onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Self-Study Tools' });"
+                  >Upcoming Webinars</a
+                ></span
+              >
+
+              <ul class="is-hidden">
+                <li>
+                  <a
+                    href="/events/webinars/on-demand"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'On Demand Webinars' });"
+                    >On Demand Webinars</a
+                  >
+                </li>
+              </ul>
+
+              <span class="nav-heading"
+                ><a
+                  href="/events/podcasts"
+                  onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Podcasts' });"
+                  >Podcasts</a
+                ></span
+              >
+            </li>
+
+            <li class="has-children quarter">
+              <span class="nav-heading"
+                ><a
+                  href="/events/channel-training/"
+                  onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Classroom Training' });"
+                  >Channel Training</a
+                ></span
+              >
+
+              <span class="nav-heading"
+                ><a
+                  href="/events/industry-events/"
+                  onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Industry Events' });"
+                  >Industry Events</a
+                ></span
+              >
+
+              <span class="nav-heading"
+                ><a
+                  href="/events/archives/"
+                  onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Event Archives' });"
+                  >Event Archives</a
+                ></span
+              >
+            </li>
+
+            <li class="has-children quarter">
+              <div style="padding-top: 50px; padding-bottom: 0">
+                <a href="https://connect.comptia.org/emea" style="height: auto">
+                  <img
+                    style="border: medium none; width: 100%"
+                    src="https://comptiacdn.azureedge.net/webcontent/images/default-source/events/emea2022/emeacon-22-website-hero.jpg"
+                    data-displaymode="Original"
+                    alt="ChannelCon 2022"
+                    title="EMEA 2022"
+                  />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Resources -->
+        <li class="has-children">
+          <a
+            href="/resources"
+            aria-haspopup="true"
+            onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Resources' });"
+            >Resources<span></span
+          ></a>
+
+          <ul class="cd-secondary-nav is-hidden">
+            <li class="go-back">
+              <a href="#0">Menu<span></span></a>
+            </li>
+            <li class="see-all">
+              <a
+                href="/resources"
+                onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Resources' });"
+                >Resources</a
+              >
+            </li>
+
+            <li class="has-children fifth">
+              <span class="nav-heading"
+                ><a
+                  href="/resources"
+                  onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Trends & Analysis' });"
+                  >Trends &amp; Analysis</a
+                ></span
+              >
+
+              <ul class="is-hidden">
+                <li>
+                  <a
+                    href="/resources/cloud-computing"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Cloud Computing' });"
+                    >Cloud Computing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/resources/computer-networks"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Computer Networks' });"
+                    >Computer Networks</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/resources/cybersecurity"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Cybersecurity' });"
+                    >Cybersecurity</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="has-children fifth">
+              <span class="nav-heading"
+                ><a
+                  href="/resources"
+                  onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Trends & Analysis' });"
+                ></a
+                >&nbsp;</span
+              >
+
+              <ul class="is-hidden">
+                <li>
+                  <a
+                    href="/resources/data-and-analytics"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Data and Analytics' });"
+                    >Data and Analytics</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/resources/it-career-center"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'IT Career Center' });"
+                    >IT Career Center</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="has-children fifth">
+              <span class="nav-heading" role="presentation">&nbsp;</span>
+
+              <ul class="is-hidden">
+                <li>
+                  <a
+                    href="/resources/it-support-and-help-desk"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'IT Support and Help Desk' });"
+                    >IT Support and Help Desk</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/resources/it-workforce"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'IT Workforce' });"
+                    >IT Workforce</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="has-children fifth">
+              <span class="nav-heading" role="presentation">IT Career Tools</span>
+
+              <ul class="is-hidden">
+                <li>
+                  <a
+                    href="/content/comptia-career-roadmap"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Career Roadmap' });"
+                    >Career Roadmap</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/content/lp/it-certifications-job-match"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Certifications and Jobs' });"
+                    >Certifications and Jobs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/content/it-salary-calculator"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'IT Salary Calculator' });"
+                    >IT Salary Calculator</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/content/lp/ziprecruiter"
+                    onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Zip Recruiter' });"
+                    >Find A Job</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="has-children fifth">
+              <span class="nav-heading"
+                ><a
+                  href="/blog"
+                  onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CompTIA Blog' });"
+                  >CompTIA Blog</a
+                ></span
+              >
+              <span class="nav-heading"
+                ><a
+                  href="/resources/comptiaworld-magazine"
+                  onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'CompTIA World' });"
+                  >CompTIA World</a
+                ></span
+              >
+              <span class="nav-heading"
+                ><a
+                  href="/career-change"
+                  onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Career Changers' });"
+                  >Career Changers</a
+                ></span
+              >
+              <span class="nav-heading"
+                ><a
+                  href="/membership/it-pro/student-membership-and-benefits"
+                  onclick="gtag('event', 'Navigation', { 'event_category': 'Flyout Navigation', 'event_label': 'Career Changers' });"
+                  >Students</a
+                ></span
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="hideOnDesktop sub">
+          <a href="/about-us" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'About Us' });"
+            >About Us</a
+          >
+        </li>
+        <li class="hideOnDesktop sub">
+          <a href="/contact-us" onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Contact Us' });"
+            >Contact Us</a
+          >
+        </li>
+        <li class="hideOnDesktop sub">
+          <a
+            href="https://help.comptia.org/hc/en-us/categories/115001121563"
+            onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'Help' });"
+            >Help</a
+          >
+        </li>
+        <li class="hideOnDesktop sub">
+          <a
+            href="https://my.comptia.org"
+            onclick="gtag('event', 'Navigation', { 'event_category': 'Zero Navigation', 'event_label': 'My Account' });"
+            >Log in</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div id="cd-search" class="cd-search">
+      <form action="/search" method="post" id="searchForm">
+        <input type="text" id="query" name="query" />
+        <input
+          type="image"
+          src="https://comptiacdn.azureedge.net/webcontent/images/default-source/mainsitetemplateimages/search.png?sfvrsn=64725786_2"
+          class="ibSearch"
+        />
+      </form>
+    </div>
+  </header>
+</section>
+<section class="hero-container">
+  <div class="hero-content">
+    <div class="master-slider ms-skin-default" id="mastersliderhome">
+      <div class="ms-slide" data-delay="8">
+        <div class="hero-content hero-body hero-bg-1">
+          <div class="covid noTopMarginDesktop">
+            <a
+              href="https://www.comptia.org/blog/voucher-discount"
+              title="Voucher Discounts"
+              onclick="gtag('event', 'Hero', { 'event_category': 'Homepage', 'event_label': 'Banner 1' });"
+              ><img
+                src="https://comptiacdn.azureedge.net/webcontent/images/default-source/homepage/10-22_save_money_desktop_top-en.png?sfvrsn=f5187452_5"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="ms-slide" data-delay="8">
+        <div class="hero-content hero-body hero-bg-2">
+          <div class="covid noTopMarginDesktop">
+            <a
+              href="https://www.comptia.org/landing/a/"
+              title="CompTIA A+"
+              onclick="gtag('event', 'Hero', { 'event_category': 'Homepage', 'event_label': 'Banner 2' });"
+              ><img
+                src="https://comptiacdn.azureedge.net/webcontent/images/default-source/homepage/10-22_a_plus_desktop_top-en.png?sfvrsn=41b7f1da_8"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="ms-slide" data-delay="8">
+        <div class="hero-content hero-body hero-bg-3">
+          <div class="covid noTopMarginDesktop">
+            <a
+              href="https://www.comptia.org/content/lp/it-certifications-job-match"
+              title="Certification Jobs"
+              onclick="gtag('event', 'Hero', { 'event_category': 'Homepage', 'event_label': 'Banner 3' });"
+              ><img
+                src="https://comptiacdn.azureedge.net/webcontent/images/default-source/homepage/10-22_jobs_desktop_top-en.png?sfvrsn=422c044e_4"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="moz-extension://e31aa4e6-0e37-47d4-bf83-c2ba671a8df8/js/app.js" type="text/javascript"></script>
+  </div>
+</section>
+<section id="BodyContent_C005_Col00" class="sf_colsIn product-highlight" data-sf-element="Container">
+  <div id="BodyContent_C005_Col01" class="sf_colsIn container" data-sf-element="Container" data-placeholder-label="Container">
+    <h1>Get the skills you want and employers need.</h1>
+    <div class="row product-highlight" data-sf-element="Row">
+      <div id="BodyContent_C007_Col00" class="sf_colsIn col-md-4" data-sf-element="Column 1" data-placeholder-label="Column 1">
+        <img
+          data-method="ResizeFitToAreaArguments"
+          data-customsizemethodproperties="{'MaxWidth':150,'MaxHeight':150,'Width':null,'Height':null,'ScaleUp':false,'Quality':'High','Method':'ResizeFitToAreaArguments'}"
+          width="150"
+          height="150"
+          src="https://comptiacdn.azureedge.net/webcontent/images/default-source/siteicons/iconaplus.svg?sfvrsn=9ef24dcf_2&amp;MaxWidth=150&amp;MaxHeight=150&amp;ScaleUp=false&amp;Quality=High&amp;Method=ResizeFitToAreaArguments&amp;Signature=C1367658D0260D4D5D2EF0E02D90998E8AC21886"
+          alt="iconAPlus"
+          title="iconAPlus"
+          data-displaymode="Custom"
+          style="display: block; margin-left: auto; margin-right: auto"
+        />
+        <p class="title">CompTIA A+</p>
+        <p class="description">
+          A+ is the starting point for a career in IT. The performance-based exams certify foundational IT skills across a variety of
+          devices and operating systems.
+        </p>
+        <p class="learnmore"><a href="/certifications/a">Learn More</a></p>
+      </div>
+      <div id="BodyContent_C007_Col01" class="sf_colsIn col-md-4" data-sf-element="Column 2" data-placeholder-label="Column 2">
+        <img
+          data-method="ResizeFitToAreaArguments"
+          data-customsizemethodproperties="{'MaxWidth':150,'MaxHeight':150,'Width':null,'Height':null,'ScaleUp':false,'Quality':'High','Method':'ResizeFitToAreaArguments'}"
+          width="150"
+          height="150"
+          src="https://comptiacdn.azureedge.net/webcontent/images/default-source/siteicons/iconnetworkplus.svg?sfvrsn=70273de8_2&amp;MaxWidth=150&amp;MaxHeight=150&amp;ScaleUp=false&amp;Quality=High&amp;Method=ResizeFitToAreaArguments&amp;Signature=A23180FC1F34607BB9B954698501C770A133E507"
+          alt="iconNetworkPlus"
+          title="iconNetworkPlus"
+          data-displaymode="Custom"
+          style="display: block; margin-left: auto; margin-right: auto"
+        />
+        <p class="title">CompTIA Network+</p>
+        <p class="description">
+          Network+ certifies the essential skills needed to confidently design, configure, manage and troubleshoot any wired and wireless
+          devices.
+        </p>
+        <p class="learnmore"><a href="/certifications/network">Learn More</a></p>
+      </div>
+      <div id="BodyContent_C007_Col02" class="sf_colsIn col-md-4" data-sf-element="Column 3" data-placeholder-label="Column 3">
+        <img
+          data-method="ResizeFitToAreaArguments"
+          data-customsizemethodproperties="{'MaxWidth':150,'MaxHeight':150,'Width':null,'Height':null,'ScaleUp':false,'Quality':'High','Method':'ResizeFitToAreaArguments'}"
+          width="150"
+          height="150"
+          src="https://comptiacdn.azureedge.net/webcontent/images/default-source/siteicons/iconsecurityplus.svg?sfvrsn=f75641d3_2&amp;MaxWidth=150&amp;MaxHeight=150&amp;ScaleUp=false&amp;Quality=High&amp;Method=ResizeFitToAreaArguments&amp;Signature=E706E71729174906E7D6C3094DE3D17B70AA8C98"
+          alt="iconSecurityPlus"
+          title="iconSecurityPlus"
+          data-displaymode="Custom"
+          style="display: block; margin-left: auto; margin-right: auto"
+        />
+        <p class="title">CompTIA Security+</p>
+        <p class="description">
+          Security+ provides a global benchmark for best practices in IT network and operational security, one of the fastest-growing fields
+          in IT.
+        </p>
+        <p class="learnmore"><a href="/certifications/security">Learn More</a></p>
+      </div>
+    </div>
+  </div>
+</section>
